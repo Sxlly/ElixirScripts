@@ -28,11 +28,10 @@ defmodule Elixirscripter do
 
 
   #linked list
-  def linkedList do
+  def get_aircraft_turbine_temp() do
+    [247,145,256]
+  end
 
-    defstruct data: 0,
-    next: nil,
-    index: 0
 
   end
 
