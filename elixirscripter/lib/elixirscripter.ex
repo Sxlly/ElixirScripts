@@ -32,9 +32,12 @@ defmodule Elixirscripter do
     [247,145,256]
   end
 
-
   def get_aircraft_oil_temp() do
     [145,546,786]
+  end
+
+  def get_aircraft_oil_psa() do
+    [100,450,600]
   end
 
 
