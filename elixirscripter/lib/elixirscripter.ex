@@ -2,8 +2,9 @@ defmodule Elixirscripter do
 
   use Application
   def start(_type, _args) do
-    #code
-    Supervisor.start_link([], strategy: :one_for_one)
+    #code begin
+    IO.puts(Elixirscripter.hello())
+    Supervisor.start_link([], strategy: :one_for_one) #supervisor watches child processes child processes in "[]"
   end
 
   def hello do
