@@ -27,6 +27,18 @@ defmodule Elixirscripter do
   end
 
 
+  #linked list
+  def linkedList do
+
+    defstruct data: 0,
+    next: nil,
+    index: 0
+
+  end
+
+
+
+
 
 
 end
