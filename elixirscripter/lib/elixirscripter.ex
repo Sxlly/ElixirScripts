@@ -40,5 +40,9 @@ defmodule Elixirscripter do
     [100,450,600]
   end
 
+  def get_latest_reading(list) do
+    hd(list)
+  end
+
 
   end
