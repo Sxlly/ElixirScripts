@@ -44,5 +44,14 @@ defmodule Elixirscripter do
     hd(list)
   end
 
+  def remove_latest_reading(list) do
+    tl(list)
+  end
+
+  def append_latest_reading(list, value) do
+    list ++ [value]
+
+  end
+
 
   end
