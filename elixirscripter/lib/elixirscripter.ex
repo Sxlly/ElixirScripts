@@ -1,18 +1,13 @@
 defmodule Elixirscripter do
-  @moduledoc """
-  Documentation for `Elixirscripter`.
-  """
 
-  @doc """
-  Hello world.
+  use Application
+  def start(_type, _args) do
+    #code
+    Supervisor.start_link([], strategy: :one_for_one)
+  end
 
-  ## Examples
-
-      iex> Elixirscripter.hello()
-      :world
-
-  """
   def hello do
     :world
   end
+
 end
