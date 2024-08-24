@@ -16,8 +16,12 @@ defmodule Elixirscripter do
 
   #main method --> called by start method
   def main do
-    IO.puts("example output")
+    name = "Shae";
+    status = :gold
 
+    if status === :gold do
+      IO.puts("Welcome to the fancy lounge, #{name}")
+    end
   end
 
 
