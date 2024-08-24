@@ -16,9 +16,8 @@ defmodule Elixirscripter do
 
   #main method --> called by start method
   def main do
-    x = 5
-    x = 10
-    IO.puts(x)
+    IO.puts("example output")
+
   end
 
 
