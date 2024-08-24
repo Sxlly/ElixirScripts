@@ -21,6 +21,8 @@ defmodule Elixirscripter do
 
     if status === :gold do
       IO.puts("Welcome to the fancy lounge, #{name}")
+    else
+      IO.puts("Goodbye no entry!")
     end
   end
 
