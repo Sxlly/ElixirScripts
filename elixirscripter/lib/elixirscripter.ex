@@ -33,6 +33,11 @@ defmodule Elixirscripter do
   end
 
 
+  def get_aircraft_oil_temp() do
+    [145,546,786]
+  end
+
+
   end
 
 
