@@ -19,6 +19,18 @@ defmodule Elixirscripter do
     Enum.reverse(new_list)
   end
 
+  def sum_of_readings_simple([]) do
+    0
+  end
+
+
+  def sum_of_readings_simple([h | t]) do
+    h + sum_of_readings_simple(t)
+
+  end
+
+
+
 
 
 
