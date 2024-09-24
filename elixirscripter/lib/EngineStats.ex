@@ -50,18 +50,13 @@ defmodule Elixirscripter do
     end
   end
 
-  def times_risen([]) do
-    0
-  end
-
   def times_risen([h | t]) do
-    [x | y] = t
-
-    if h > x do
-
-    end
 
 
   end
+
+
+
+
 
 end
