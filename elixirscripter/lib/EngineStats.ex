@@ -1,6 +1,6 @@
 defmodule Elixirscripter do
 
-
+  #generate random numbers item
   def get_readings() do
     Enum.map([0,0,0,0,0], fn item -> item = :rand.uniform(100) end)
   end
@@ -28,15 +28,5 @@ defmodule Elixirscripter do
     h + sum_of_readings_simple(t)
 
   end
-
-
-
-
-
-
-
-
-
-
 
 end
