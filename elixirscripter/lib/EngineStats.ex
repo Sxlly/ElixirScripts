@@ -1,14 +1,5 @@
 defmodule Elixirscripter do
 
-
-  def main do
-
-    IO.puts("EngineMonitor Active")
-
-  end
-
-
-
   def get_latest_reading(list) do
     hd(list)
   end
@@ -21,8 +12,9 @@ defmodule Elixirscripter do
     list_reverse = Enum.reverse(list)
     new_list = [value | list_reverse]
     Enum.reverse(new_list)
-
   end
+
+
 
 
 
