@@ -41,12 +41,12 @@ defmodule Elixirscripter do
 
   #if list has > 1 item do following function
   def max_reading([h | t]) do
-    [x | y] = t #split first two values of tail ** [n1,n2,n3] -> [n1,n2] -> x: n1 | y: n2
+    [x | y] = t #split the tail list [n1,n2,n3] -> n1 becomes x -> [n2,n3] becomes y remainder list
 
-    if h > x do
+    if h > x do #if original head value greater than x value do max reading (head | y list)
       max_reading([h | y])
     else
-      max_reading(t)
+      max_reading(t) # if the current head value is not greater than x value then run max_Reading function with current tail list
     end
   end
 
