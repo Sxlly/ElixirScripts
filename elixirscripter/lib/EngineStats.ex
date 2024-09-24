@@ -40,6 +40,8 @@ defmodule Elixirscripter do
   end
 
   def max_reading([h | t]) do
+    [x | y] = t #split first two values of tail ** [n1,n2,n3] -> [n1,n2] -> x: n1 | y: n2
+
 
   end
 
