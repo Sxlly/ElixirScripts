@@ -10,14 +10,7 @@ defmodule Elixirscripter do
   end
 
   def main do
-    name = "Shae" #string
-    status = Enum.random([:gold, :silver, :bronze])
-
-    if status === :gold do
-      IO.puts("welcome to the fancy lounge, #{name}")
-    else
-      IO.puts("Bye")
-    end
+    time = DateTime.new!(Date.new!(2024, 1, 1), Time.new!(0,0,0,0), "Etc/UTC")
 
   end
 
