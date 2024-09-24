@@ -10,8 +10,15 @@ defmodule Elixirscripter do
   end
 
   def main do
-    x = 5
-    IO.puts(x)
+    name = "Shae" #string
+    status = :gold #atom
+
+    if status === :gold do
+      IO.puts("welcome to the fancy lounge, #{name}")
+    else
+      IO.puts("Bye")
+    end
+
   end
 
 
