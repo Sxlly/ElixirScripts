@@ -34,4 +34,13 @@ defmodule Elixirscripter do
 
   end
 
+  #if list has one item then item -> max value
+  def max_reading([a]) do
+    a
+  end
+
+  def max_reading([h | t]) do
+
+  end
+
 end
