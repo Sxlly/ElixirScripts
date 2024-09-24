@@ -9,49 +9,12 @@ defmodule Elixirscripter do
     Supervisor.start_link([], strategy: :one_for_one) #supervisor watches child processes child processes in "[]"
   end
 
-  #dummy hello world method
-  def hello do
-    :world
-  end
-
-  #main method --> called by start method
   def main do
-    name = "Shae";
-    status = :gold
-
-    if status === :gold do
-      IO.puts("Welcome to the fancy lounge, #{name}")
-    else
-      IO.puts("Goodbye no entry!")
-    end
+    x = 5
+    IO.puts(x)
   end
 
 
-  #linked list
-  def get_aircraft_turbine_temp() do
-    [247,145,256]
-  end
-
-  def get_aircraft_oil_temp() do
-    [145,546,786]
-  end
-
-  def get_aircraft_oil_psa() do
-    [100,450,600]
-  end
-
-  def get_latest_reading(list) do
-    hd(list)
-  end
-
-  def remove_latest_reading(list) do
-    tl(list)
-  end
-
-  def append_latest_reading(list, value) do
-    list ++ [value]
-
-  end
 
 
   end
