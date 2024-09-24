@@ -11,16 +11,13 @@ defmodule Elixirscripter do
 
   def main do
 
-    turbine_inlet_temp = [192,43,32,312,984]
-    oil_temp = [232,434,124,545,343]
-    oil_pressure = [234,121,434,646,343]
-
-    IO.puts("The latest oil temp: #{get_latest(oil_temp)}")
-
+    IO.puts("EngineMonitor Active")
 
   end
 
-  def get_latest(list) do
+
+
+  def get_latest_reading(list) do
     hd(list)
   end
 
