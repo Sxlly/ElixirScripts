@@ -11,7 +11,7 @@ defmodule Elixirscripter do
 
   def main do
     name = "Shae" #string
-    status = :gold #atom
+    status = Enum.random([:gold, :silver, :bronze])
 
     if status === :gold do
       IO.puts("welcome to the fancy lounge, #{name}")
