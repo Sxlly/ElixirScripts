@@ -10,7 +10,17 @@ defmodule Elixirscripter do
   end
 
   def main do
-    time = DateTime.new!(Date.new!(2024, 1, 1), Time.new!(0,0,0,0), "Etc/UTC")
+    IO.puts("hello world")
+
+    turbine_inlet_temp = [192,43,32,312,984]
+
+    latest(turbine_inlet_temp)
+
+
+  end
+
+  def latest([h | t]) do
+    IO.puts(h)
 
   end
 
