@@ -10,19 +10,22 @@ defmodule Elixirscripter do
   end
 
   def main do
-    IO.puts("hello world")
 
     turbine_inlet_temp = [192,43,32,312,984]
+    oil_temp = [232,434,124,545,343]
+    oil_pressure = [234,121,434,646,343]
 
-    latest(turbine_inlet_temp)
+    IO.puts("The latest oil temp: #{get_latest(oil_temp)}")
 
-
-  end
-
-  def latest([h | t]) do
-    IO.puts(h)
 
   end
+
+  def get_latest(list) do
+    hd(list)
+  end
+
+
+
 
 
 
