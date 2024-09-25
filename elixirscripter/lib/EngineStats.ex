@@ -56,7 +56,6 @@ defmodule Elixirscripter do
   end
 
   def times_risen([h | t], risen_count) do
-
     [x | y] = t
 
     if h > x do
@@ -66,6 +65,11 @@ defmodule Elixirscripter do
       times_risen(t, risen_count)
 
     end
+  end
+
+
+  def danger_detect([h | t]) do
+    danger_present
   end
 
 
