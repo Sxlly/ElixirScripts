@@ -55,8 +55,9 @@ defmodule Elixirscripter do
     risen_count
   end
 
+  #if list has > 1 itemd o the following
   def times_risen([h | t], risen_count) do
-    [x | y] = t
+    [x | y] = t #split the tail list [n1,n2,n3] -> n1 becomes x -> [n2,n3] becomes y remainder list
 
     if h > x do
       risen_count = risen_count + 1
