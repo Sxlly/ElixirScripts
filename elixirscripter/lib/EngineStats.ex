@@ -52,6 +52,14 @@ defmodule Elixirscripter do
 
   def times_risen([h | t]) do
 
+    [x | y] = t
+
+    if h > x do
+
+    end
+
+
+
 
   end
 
