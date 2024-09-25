@@ -59,23 +59,24 @@ defmodule Elixirscripter do
   def times_risen([h | t], risen_count) do
     [x | y] = t #split the tail list [n1,n2,n3] -> n1 becomes x -> [n2,n3] becomes y remainder list
 
-    if h > x do
-      risen_count = risen_count + 1
-      times_risen([x | y], risen_count)
+    if h > x do #if original head value greater than x value do max reading (head | y list)
+      risen_count = risen_count + 1 #if current head is bigger then number to its right then add 1 count to rise_count variable
+      times_risen([x | y], risen_count) #call itself again {recursion} pass [current x | y list], risen_count variable
     else
-      times_risen(t, risen_count)
+      times_risen(t, risen_count) #pass tail list into itself function along with risen_count variable
 
     end
   end
 
-
+  #if list has one item left it means no items pre this item were larger than it than 50 or greater therefore danger is false
   def danger_detect([a]) do
-    false
+    false #-> boolean to iex shell
   end
 
+  #if list length > 1 do the following function
   def danger_detect([h | t]) do
 
-    [x | y] = t
+    [x | y] = t #split the tail list [n1,n2,n3] -> n1 becomes x -> [n2,n3] becomes y remainder list
 
     if h - x >= 50 do
       true
