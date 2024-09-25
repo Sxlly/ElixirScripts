@@ -50,8 +50,9 @@ defmodule Elixirscripter do
     end
   end
 
+  #if list has one value left then throw risen_count value to iex shell
   def times_risen([a], risen_count) do
-    IO.puts(risen_count)
+    risen_count
   end
 
   def times_risen([h | t], risen_count) do
@@ -60,7 +61,7 @@ defmodule Elixirscripter do
 
     if h > x do
       risen_count = risen_count + 1
-      times_risen([h | y], risen_count)
+      times_risen([x | y], risen_count)
     else
       times_risen(t, risen_count)
 
