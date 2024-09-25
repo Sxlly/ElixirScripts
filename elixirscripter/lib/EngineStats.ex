@@ -83,8 +83,14 @@ defmodule Elixirscripter do
     else
       danger_detect(t) # run itself {recursion} with current tail list
     end
-
   end
+
+  #function to detect if string variable contains the word FIRE in any format
+  def detect_fire(text) do
+    String.trim(text) #removes whitespaces from string " " eg
+    |> String.contains?(["FIRE", "fire", "Fire", "fIRE"]) # pipe trimmed string into function contains -> if string contains the word fire in appearance of the 4 pre defined structures -> boolean -> true
+  end
+
 
 
 
