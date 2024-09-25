@@ -69,10 +69,18 @@ defmodule Elixirscripter do
 
 
   def danger_detect([a]) do
-    danger_present
+    false
   end
 
   def danger_detect([h | t]) do
+
+    [x | y] = t
+
+    if h - x >= 50 do
+      true
+    else
+      danger_detect(t)
+    end
 
   end
 
