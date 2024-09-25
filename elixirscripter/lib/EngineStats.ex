@@ -91,6 +91,15 @@ defmodule Elixirscripter do
     |> String.contains?(["FIRE", "fire", "Fire", "fIRE"]) # pipe trimmed string into function contains -> if string contains the word fire in appearance of the 4 pre defined structures -> boolean -> true
   end
 
+  def decode(text) do
+    list = String.split(text)
+    Enum.map(list, fn word -> String.first(word) end)
+    |> List.to_string()
+    |> String.trim()
+
+
+  end
+
 
 
 
