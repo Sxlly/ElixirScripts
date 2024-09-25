@@ -68,8 +68,12 @@ defmodule Elixirscripter do
   end
 
 
-  def danger_detect([h | t]) do
+  def danger_detect([a]) do
     danger_present
+  end
+
+  def danger_detect([h | t]) do
+
   end
 
 
