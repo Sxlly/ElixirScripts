@@ -50,17 +50,21 @@ defmodule Elixirscripter do
     end
   end
 
-  def times_risen([h | t]) do
+  def times_risen([a], risen_count) do
+    IO.puts(risen_count)
+  end
+
+  def times_risen([h | t], risen_count) do
 
     [x | y] = t
 
     if h > x do
+      risen_count = risen_count + 1
+      times_risen([h | y], risen_count)
+    else
+      times_risen(t, risen_count)
 
     end
-
-
-
-
   end
 
 
