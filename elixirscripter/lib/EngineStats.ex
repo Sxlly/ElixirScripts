@@ -78,8 +78,8 @@ defmodule Elixirscripter do
 
     [x | y] = t #split the tail list [n1,n2,n3] -> n1 becomes x -> [n2,n3] becomes y remainder list
 
-    if h - x >= 50 do
-      true
+    if h - x >= 50 do # if current head value minus current x value leave remainder of 50 or greater do the following
+      true #if condition above was satisfied -> rise of 50 or greater has occured in readings -> danger -> boolean -> true
     else
       danger_detect(t)
     end
