@@ -96,8 +96,6 @@ defmodule Elixirscripter do
     Enum.map(list, fn word -> String.first(word) end)
     |> List.to_string()
     |> String.trim()
-
-
   end
 
 
